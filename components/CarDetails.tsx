@@ -13,8 +13,6 @@ interface CarDetailsProps {
   car: CarProps;
 }
 
-console.log(process.env.NEXT_PUBLIC_RAPID_API_Key);
-
 const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => (
   <>
     <Transition appear show={isOpen} as={Fragment}>
